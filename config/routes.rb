@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'alphablog#home'
   get 'about', to: 'alphablog#about'
 
-  resources :articles
+  resources :articles, only: [:show, :index]
 end
